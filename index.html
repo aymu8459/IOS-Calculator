@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- IOS Calculator Project
+        1. Make a big black section
+        2. Have output field at top
+        3. create similar rows of buttons(classes)
+        4. last row has three buttons
+    -->
+  <body>
+    <main>
+      <section id="output-top">
+        <div id="op-window"></div>
+        <div id="number-window">0</div>
+      </section>
+      <!--^This first section has two output fields. This is where the output and results
+    will show for the calculator.-->
+      <section>
+        <div id="top-row" class="buttons">
+          <button id="clear" class="special-ops">AC</button>
+          <button id="plus-minus" class="special-ops">±</button>
+          <button id="percent" class="special-ops">%</button>
+          <button id="division" class="ops">÷</button>
+        </div>
+        <div id="second-row" class="buttons">
+          <button id="seven" class="number">7</button>
+          <button id="eight" class="number">8</button>
+          <button id="nine" class="number">9</button>
+          <button id="multiply" class="ops">x</button>
+        </div>
+        <div id="third-row" class="buttons">
+          <button id="four" class="number">4</button>
+          <button id="five" class="number">5</button>
+          <button id="six" class="number">6</button>
+          <button id="subtract" class="ops">-</button>
+        </div>
+        <div id="fourth-row" class="buttons">
+          <button id="one" class="number">1</button>
+          <button id="two" class="number">2</button>
+          <button id="three" class="number">3</button>
+          <button id="add" class="ops">+</button>
+        </div>
+        <div id="last-row" class="buttons">
+          <button id="zero" class="number">0</button>
+          <button id="decimal" class="number">.</button>
+          <button id="equal" class="ops">=</button>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
