@@ -15,6 +15,8 @@ main {
     height: 815px;
     border-radius: 50px;
     opacity: 0.9;
+    flex: wrap;
+    /* this is the mainframe of the calculator */
 }
 
 /* @media only screen and (max-width:400px) { */
@@ -53,6 +55,9 @@ main {
     font-size: 70px;
     /* margin-left: 350px; */
     text-align: end;
+    /* ^this text-align is used so that the numbers show on
+    the right and accumulate towards the left end the way the
+    IOS calculator does */
 }
 
 .buttons {
@@ -60,18 +65,24 @@ main {
     justify-content: center;
     /* border: 1px solid green; */
     width: 100%;
-    /* height: 1%; */
+    /* this combination allows for the rows to be 
+    uniform and the buttons to be evenly-spaced*/
 }
 
 .buttons button {
     width: 100px;
     height: 100px;
+    /* px were used rather than percentages
+    for width and height to avoid changes in 
+    button shape through change of screen dimensions */ 
     /* width: 25%; */
     /* height: 10%; */
     margin: 5px 8px;
     padding: 30px;
     padding-top: 26px;
     border-radius: 100%;
+    /* ^along with the same width and height,
+    this gives the button the circle shape */ 
     font-size: 35px;
     outline: none;
     text-align: center;
@@ -99,9 +110,15 @@ main {
     background-color: rgba(255, 149, 0, 1);
 }
 
+/* ^ background-colors followed color scheme of IOS calculator */
+
 #zero {
     width: 43.5%;
     border-radius: 60px;
     text-align: center;
     padding-right: 142px;
 }
+
+/* ^zero id used to style zero button
+because it is the only button with a
+different shape than others */
